@@ -29,15 +29,7 @@
         background-size: cover;
     }
     
-    header a {
-        float: left;
-        display: block;
-    }
-    
-    header a img {
-        height: 22px;
-        margin: 7px 5px 0px 0px;
-    }
+   
   
     h1, h2, h3 {
         font-weight: bolder;
@@ -87,16 +79,28 @@
         background-color: rgba(255,255,255,0.9);
         padding: 10px 40px;
     }
-    
-    
+   #main {
+      background: white;
+      background-color: rgba(255,255,255,0.9);
+      padding: 10px 40px;
+    }
+    header{
+      color: rgba(255,255,255,0.9);
+      margin-bottom: 40px;
+    }
+    header h1 {
+      border-bottom: solid 1px #fff;   
+    }
   </style>
 </head>
 
-<body>
-
+<body>      
   <div id="container">
     <header>
       <h1>Kaspar Minosiants</h1>
+      <div>
+        I'm a software developer (java/scala) curriently working in Melbourne Australia.
+      </div>  
     </header>
     <div id="main" role="main">
       {{ content }}
