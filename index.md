@@ -2,7 +2,6 @@
 layout: default
 title: Kaspar Minosiants
 ---
-
 Founder: [quotiny.tv](http://quotiny.tv "Quotiny")
 
 Me in social networks 
