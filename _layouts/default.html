@@ -15,13 +15,15 @@
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
+   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome.min.css">
   <style type="text/css" media="screen">
   
     body {
         font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
         line-height: 26px;
         text-align: justify;
-        
+        font-size: 16px;
         background: url("http://minosiants.github.com/mel.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -29,7 +31,7 @@
         background-size: cover;
     }
     
-   
+    
   
     h1, h2, h3 {
         font-weight: bolder;
@@ -70,31 +72,51 @@
     }
     
     #container {
-        margin: 0px auto;
-        max-width: 40em;
-        min-width: 30em;
-        width: 40em;       
-        padding: 10px 40px;
+        
     }
-   #main {
+    #main {
       background: white;
-      background-color: rgba(255,255,255,0.9);
+      background-color: rgba(255,255,255,0.8);
       padding: 10px 40px;
     }
     header{
-      color: rgba(255,255,255,0.9);
+      color: rgba(255,255,255,0.8);
       margin-bottom: 40px;
+    }
+    header a, header a:hover{
+      color: rgba(255,255,255,0.8);
+      font-size: 20pt;
+      text-decoration: none;
     }
     header h1 {
       border-bottom: solid 1px #fff;   
     }
+
+    .mini-layout .mini-layout-body {  
+      margin: 0 auto;
+      width: 70%;
+
+    }
+    .container{
+      margin-top: 30px;
+
+    }
   </style>
 </head>
 
-<body>      
-  <div id="container">
+<body >      
+  <div class="container">
+  <div class="mini-layout">
+  <div class=" mini-layout-body">
     <header>
-      <h1>Kaspar Minosiants</h1>
+      <h1>Kaspar Minosiants 
+
+        <ul class="unstyled inline pull-right">
+          <li><a href="http://www.twitter.com/minosiants"><i class="icon-twitter"></i></a></li>
+          <li><a href="https://github.com/minosiants" ><i class="icon-github"></i></a></li>
+          <li><a href="http://www.linkedin.com/in/kaspar"><i class="icon-linkedin"></i></a></li>
+        </ul> 
+      </h1>
       <div>
         I'm a software developer (java/scala) curriently working in Melbourne Australia.
       </div>  
@@ -105,8 +127,8 @@
     <footer>
     </footer>
   </div> <!-- eo #container -->
-
-
+</div>
+</div>
   <script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
   
 
