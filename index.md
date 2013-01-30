@@ -2,7 +2,7 @@
 layout: default
 title: Kaspar Minosiants
 ---
-I'm a software developer (java/scala) curriently working in Melbourne Australia.
+
 Founder: [quotiny.tv](http://quotiny.tv "Quotiny")
 
 Me in social networks 
