@@ -38,16 +38,20 @@
     
   
     h1, h2, h3 {
-        font-family:"Lato","Verdana",sans-serif;       
+        font-family:"Lato","Verdana",sans-serif;          
+          
     }
-  
+    h1{
+      font-size: 260%;            
+    } 
+      
     h2 {
-        font-size: 1.8em;          
+        font-size: 200%;          
         font-weight: normal;
     }
     
     h3 {
-      font-size: 1.5em;      
+      font-size: 180%;      
     }
     
     a {
@@ -76,35 +80,33 @@
       
     }
 
-    .mini-layout .mini-layout-body {  
-      /*margin: 0 auto;
-      width: 70%;*/
-
-    }
+    
     .container{
       margin-top: 30px;
 
     }
-    .about p{
-      font-size: 20px;
-      margin: 0 0 5px;
-    }
+    
     blockquote{  
       margin-top: 10px;  
     }
-    small{
-        font-size: 1.2em;
+    p, blockquote p{  
+          font-size:150%
     }
-    ul, ul{
-      padding:0;
-      margin:0;                    
-    }  
   
     @media only screen and (max-width: 700px) {
-              .social-media{
-                float: left !important;
-              }
+      .social-media{
+        float: left !important;
       }
+      body { font-size: 0.8em; }              
+          
+    }
+    @media only screen and (min-width: 900px) {
+        .mini-layout .mini-layout-body {  
+          margin: 0 auto;
+          width: 70%;
+    
+        }
+    }  
     </style>
 </head>
 
@@ -131,37 +133,13 @@
      <div class="row">
       <div class=" about col-md-12">
         <h2>Software developer</h2> 
-        <small >St. Petersburg Russia <i class="fa fa-arrow-right"></i> New York USA <i class="fa fa-arrow-right"></i> Melbourne Australia.</small>
+        <p >St. Petersburg Russia <i class="fa fa-arrow-right"></i> New York USA <i class="fa fa-arrow-right"></i> Melbourne Australia.</p>
       </div>
          </div>        
     
     </header>
-    <div id="main" role="main">
-      <h2 id="my_personal_projects_that_reached_public_state_">My personal projects </h2>
-
-<h3 id="quotinytv__2011_"><a href="http://quotiny.tv" title="Quotiny">quotiny.tv</a> / 2011 /</h3>
-
-<blockquote>
-<p>Quotiny is a web based application that allows users to create quotes on YouTube and Vimeo videos and share them on Twitter Facebook YouTube Vimeo. This project was made up and implemented by me. It’s based on Scala and MongoDB.</p>
-</blockquote>
-
-<h3 id="supper_blog__2012_"><a href="https://github.com/minosiants/supper-blog" title="Supper Blog">Supper Blog</a> / 2012 /</h3>
-
-<blockquote>
-<p>Spike on how to separate UI and API into independent apps. This project is based on full typesafe stack (sbt, scala, play2, akka), mongoDB, twitter bootstrap, backbone.js, CORS, websockets.</p>
-</blockquote>
-
-<h3 id="tweetsfoursquare_2012"><a href="https://chrome.google.com/webstore/detail/tweetsfoursquare/pjobhcjnjkleofapjfbaiaammlnafhpj" title="tweets@foursquare">tweets@foursquare</a> /2012/</h3>
-
-<blockquote>
-<p>Google Chrome extension. Adds search box to Foursquare venue which search for tweets using venue location and query string. Twitter search api is used for the search. With this extension people can brows https://foursquare.com/explore and search for tweets at any venues. Have fun :)</p>
-</blockquote>
-
-<h3 id="tweet2it_2009"><a href="https://code.google.com/p/tweet2it/" title="tweet2it">tweet2it</a> /2009/</h3>
-
-<blockquote>
-<p>Tweet2it is a Confluence (http://www.atlassian.com/software/confluence/) plugin to integrate Twitter usage.</p>
-</blockquote>
+     <div id="main" role="main">
+      {{ content }}
     </div>
     <footer>
     </footer>
