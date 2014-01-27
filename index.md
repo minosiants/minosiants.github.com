@@ -2,7 +2,7 @@
 layout: default
 title: Kaspar Minosiants
 ---
-## My personal projects that reached public state :)     
+## My personal projects
 
 ###[quotiny.tv](http://quotiny.tv "Quotiny")  / 2011 /
 
