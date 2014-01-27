@@ -11,21 +11,22 @@
   <meta name="description" content="The personal site of Kaspar Minosiants">
   <meta name="author" content="Kaspar Minosiants">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.2.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.0.0/css/font-awesome.min.css">
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
   
   
   <style type="text/css" media="screen">
-  
+      
+ 
+    
+      
     body {
-        font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
-        line-height: 26px;
-        text-align: justify;
-        font-size: 16px;
+        font-family: "Droid Sans","Baskerville",serif;       
+        font-size: 1.15em;
         background: url("http://minosiants.github.com/mel.jpg") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -37,68 +38,47 @@
     
   
     h1, h2, h3 {
-        font-weight: bolder;
-        text-transform: uppercase;
+        font-family:"Lato","Verdana",sans-serif;       
     }
-    h1 {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 18px;
-        letter-spacing: -1px;
-    }
-
+  
     h2 {
-        clear: left;
-        font-size: 18px;    
-        line-height: 20px;
+        font-size: 1.8em;          
+        font-weight: normal;
     }
     
     h3 {
-      font-size: 15px;
-      line-height: 18px;
-      margin: 0px;
+      font-size: 1.5em;      
     }
     
-    p {
-        font-size: 13pt;
-        line-height: 26px;
-        margin-top: 0px;
-    }
     a {
         color: #369;
         text-decoration: none;
     }
     
-    ul {
-        list-style:square;
-        padding-left: 20px;
-    }
     
-    #container {
-        
-    }
-    #main {
+    #main, header  {
       background: white;
       background-color: rgba(2, 2, 2, 0.8);
-      padding: 10px 40px;
+      padding: 10px 20px 40px ;
       border-radius: 3px;
     }
     header{
       color: rgba(255,255,255,0.8);
-      margin-bottom: 20px;
+      margin-bottom: 20px;      
     }
+    
     header a, header a:hover{
-      color: rgba(255,255,255,0.8);
-      font-size: 20pt;
+      color: rgba(255,255,255,0.8);      
       text-decoration: none;
     }
-    header h1 {
+    header .title {
       border-bottom: solid 1px #fff;   
+      
     }
 
     .mini-layout .mini-layout-body {  
-      margin: 0 auto;
-      width: 70%;
+      /*margin: 0 auto;
+      width: 70%;*/
 
     }
     .container{
@@ -112,42 +92,82 @@
     blockquote{  
       margin-top: 10px;  
     }
-    
-  </style>
+    small{
+        font-size: 1.2em;
+    }
+    ul, ul{
+      padding:0;
+      margin:0;                    
+    }  
+  
+    @media only screen and (max-width: 700px) {
+              .social-media{
+                float: left !important;
+              }
+      }
+    </style>
 </head>
 
 <body >      
   <div class="container">
   <div class="mini-layout">
-  <div class=" mini-layout-body">
+  <div class="mini-layout-body">
     <header>
-      <h1>Kaspar Minosiants 
-
-        <ul class="unstyled inline pull-right">
-          <li><a href="http://www.twitter.com/minosiants"><i class="icon-twitter"></i></a></li>
-          <li><a href="https://github.com/minosiants" ><i class="icon-github"></i></a></li>
-          <li><a href="http://www.linkedin.com/in/kaspar"><i class="icon-linkedin"></i></a></li>
-          <li><a href="https://www.facebook.com/kaspar.minosiants"><i class="icon-facebook"></i></a></li>          
-        </ul> 
-      </h1>
-      <div class="about">
-        <p>I'm a software developer (java/scala).</p> 
-        <p>St. Petersburg Russia <i class="icon-arrow-right"></i> New York USA <i class="icon-arrow-right"></i> Melbourne Australia.</p>
-      </div>  
+        <div class="row title">
+            <div class="col-sm-6">
+                <h1>Kaspar Minosiants</h1>
+            </div>    
+        <div class="col-sm-6">     
+            <h1>
+                <ul id="social-media" class="list-unstyled list-inline social-media pull-right">
+                  <li><a href="http://www.twitter.com/minosiants"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="https://github.com/minosiants" ><i class="fa fa-github"></i></a></li>
+                  <li><a href="http://www.linkedin.com/in/kaspar"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="https://www.facebook.com/kaspar.minosiants"><i class="fa fa-facebook"></i></a></li>          
+                </ul>
+            </h1>
+      </div>
+    </div>        
+     <div class="row">
+      <div class=" about col-md-12">
+        <h2>Software developer</h2> 
+        <small >St. Petersburg Russia <i class="fa fa-arrow-right"></i> New York USA <i class="fa fa-arrow-right"></i> Melbourne Australia.</small>
+      </div>
+         </div>        
+    
     </header>
     <div id="main" role="main">
-      {{ content }}
+      <h2 id="my_personal_projects_that_reached_public_state_">My personal projects </h2>
+
+<h3 id="quotinytv__2011_"><a href="http://quotiny.tv" title="Quotiny">quotiny.tv</a> / 2011 /</h3>
+
+<blockquote>
+<p>Quotiny is a web based application that allows users to create quotes on YouTube and Vimeo videos and share them on Twitter Facebook YouTube Vimeo. This project was made up and implemented by me. It’s based on Scala and MongoDB.</p>
+</blockquote>
+
+<h3 id="supper_blog__2012_"><a href="https://github.com/minosiants/supper-blog" title="Supper Blog">Supper Blog</a> / 2012 /</h3>
+
+<blockquote>
+<p>Spike on how to separate UI and API into independent apps. This project is based on full typesafe stack (sbt, scala, play2, akka), mongoDB, twitter bootstrap, backbone.js, CORS, websockets.</p>
+</blockquote>
+
+<h3 id="tweetsfoursquare_2012"><a href="https://chrome.google.com/webstore/detail/tweetsfoursquare/pjobhcjnjkleofapjfbaiaammlnafhpj" title="tweets@foursquare">tweets@foursquare</a> /2012/</h3>
+
+<blockquote>
+<p>Google Chrome extension. Adds search box to Foursquare venue which search for tweets using venue location and query string. Twitter search api is used for the search. With this extension people can brows https://foursquare.com/explore and search for tweets at any venues. Have fun :)</p>
+</blockquote>
+
+<h3 id="tweet2it_2009"><a href="https://code.google.com/p/tweet2it/" title="tweet2it">tweet2it</a> /2009/</h3>
+
+<blockquote>
+<p>Tweet2it is a Confluence (http://www.atlassian.com/software/confluence/) plugin to integrate Twitter usage.</p>
+</blockquote>
     </div>
     <footer>
     </footer>
   </div> <!-- eo #container -->
 </div>
 </div>
-  <script src="//code.jquery.com/jquery-1.9.0.min.js"></script>
-  
-
-
-
-
+  <script src="//code.jquery.com/jquery-1.9.0.min.js" async></script>
 </body>
 </html>
