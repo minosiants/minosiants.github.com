@@ -1,0 +1,51 @@
+@media (min-width: 450px) {
+
+  body {    
+    background: url("http://minosiants.github.com/mel.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;    
+  }
+  .avatare img {
+     width: 245px;  
+   }
+   header{
+    padding-top: 1rem;
+   }      
+   .name h1 {
+    font-size:1.6rem;  
+  }
+}
+
+@media (min-width: 850px) {     
+     header{
+      padding: 1rem;
+     }
+    .avatare, .box{
+      float: left;
+
+    }
+    .box{
+      padding-top: 0;
+      width: auto;
+    }
+
+    header:after {
+          content: "";
+          display: table;
+          clear: both;
+    }
+  
+  .canvas{
+    
+    width:80%; /* 288 px*/
+}    
+          
+}
+@media (min-width: 1200px) {
+  .canvas{
+    
+    width:60%; /* 288 px*/
+} 
+}
