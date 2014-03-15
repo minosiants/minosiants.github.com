@@ -2,7 +2,7 @@
 layout: default
 title: Kaspar Minosiants
 ---
-## My personal projects
+## Personal projects
 
 ###[quotiny.tv](http://quotiny.tv "Quotiny")  / 2011 /
 
