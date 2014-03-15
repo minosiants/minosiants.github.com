@@ -21,11 +21,11 @@ title: Kaspar Minosiants
 
 >Google Chrome extension. Adds search box to Foursquare venue which search for tweets using venue location and 
 >query string. Twitter search api is used for the search. With this extension people can 
->brows https://foursquare.com/explore and search for tweets at any venues. Have fun :)
+>brows [foursquare](https://foursquare.com/explore) and search for tweets at any venues. Have fun :)
 
 ###[tweet2it](https://code.google.com/p/tweet2it/ "tweet2it")  /2009/
 
 
->Tweet2it is a Confluence (http://www.atlassian.com/software/confluence/) plugin to integrate Twitter usage.
+>Tweet2it is a [Confluence](http://www.atlassian.com/software/confluence/) plugin to integrate Twitter usage.
 
 
