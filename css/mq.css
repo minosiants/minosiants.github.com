@@ -22,11 +22,11 @@
      header{
       padding: 1rem;
      }
-    .avatare, .box{
+    .avatare, .about{
       float: left;
 
     }
-    .box{
+    .about{
       padding-top: 0;
       width: auto;
     }
