@@ -19,66 +19,134 @@
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
-    <!--<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">-->
-
     <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.0/normalize.min.css" rel="stylesheet">
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/mq.css" >
+    <!-- <link rel="stylesheet" href="/css/base.css"> -->
+    <!-- <link rel="stylesheet" href="/css/mq.css" > -->
+
+    <style type="text/css">
+    * {-moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+    body {font-family: "Droid Sans","Baskerville",serif; background-color: rgba(2, 2, 2, 0.8); color: rgba(255, 255, 255, 0.7); }
+    .canvas{margin:1rem auto; width:90%; /* 288 px*/ }
+
+    header{width: 85.0694444%; /* 245/288 px */ margin: 2rem auto; }
+
+    header, .avatare img, section.projects{-webkit-border-radius: .2rem; -moz-border-radius: .2rem; -o--border-radius: .2rem; border-radius: .2rem; }
+
+    header{text-align: center; background-color: rgba(2, 2, 2, 0.8); }
+
+    header h1{margin: 0; }
+
+    .avatare img {width: 100%; vertical-align: middle; }
+
+    .about{width:100%; padding: 1rem; display: inline-block; }
+
+    .name{display: inline-block; } .name h1 {font-size:1.4rem; border-bottom:1px solid; }
+
+    .name h2 {font-size:1.2rem; }
+
+    ul{padding:0; margin:0; list-style: none; }
+
+    .social-media-links {margin-top: 0.5rem; }
+
+    .social-media-links li{display: inline-block; }
+
+    .social-media-links a{text-decoration:none; color:white; margin:0.5rem; font-size: 250%; color: rgba(255, 255, 255, 0.7); }
+
+    section.projects{background-color: rgba(2, 2, 2, 0.8); width: 85.0694444%; /* 245/288 px */ margin: 2rem auto; padding: 1rem; }
+
+    section.projects h3{font-weight: normal;}
+
+    section blockquote {border-left: .2rem solid #eee; line-height: 1.55rem; margin: 0; padding: .5rem; }
+
+    a {color: #369; text-decoration: none; } 
     
+    a:hover {text-decoration: underline; }
+
+/* MQ */
+
+@media (min-width: 450px) {
+  body {    
+    background: url("http://minosiants.github.com/mel.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;    
+  }
+
+  .avatare img {width: 245px; } 
+  header{padding-top: 1rem; }
+  .name h1 {font-size:1.6rem; } 
+}
+
+@media (min-width: 850px) { 
+    header{padding: 1rem; } 
+    .avatare, .about{float: left; } 
+    .about{padding-top: 0; width: auto; }
+    header:after {content: ""; display: table; clear: both; }    
+    .canvas{width:80%;}
+}
+
+@media (min-width: 1200px) {
+  .canvas{width:60%;} 
+}
+    
+
+</style>
+
 </head>
 
 <body>
     <section class="canvas">
-    <header>        
-        <div class="avatare">
-            <img src="../me-sml.png"> </img>
-        </div>
-        <div class="about">
-            <div class="name">
-                <h1>Kaspar Minosiants</h1>
-                <h2 class="job">Software developer</h2>
-                <ul>
-                    <li>Melbourne Australia</li>
-                    <li><i class="fa fa-arrow-up"></i></li>
-                    <li>New York USA</li>
-                    <li><i class="fa fa-arrow-up"></i></li>                
-                    <li>St. Petersburg Russia</li>
-                </ul>            
+        <header>        
+            <div class="avatare">
+                <img src="../me-sml.png"> </img>
             </div>
-    
-            <ul class="social-media-links">
-                <li>
-                    <a href="http://www.twitter.com/minosiants">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/minosiants">
-                        <i class="fa fa-github"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="http://www.linkedin.com/in/kaspar">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/kaspar.minosiants">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
+            <div class="about">
+                <div class="name">
+                    <h1>Kaspar Minosiants</h1>
+                    <h2 class="job">Software developer</h2>
+                    <ul>
+                        <li>Melbourne Australia</li>
+                        <li><i class="fa fa-arrow-up"></i></li>
+                        <li>New York USA</li>
+                        <li><i class="fa fa-arrow-up"></i></li>                
+                        <li>St. Petersburg Russia</li>
+                    </ul>            
+                </div>
 
-    <section id="main" role="main" class="projects"> 
-       {{ content }}
-    </section>
-    <footer>
-    </footer>
-</section>
-    <!-- script src="//code.jquery.com/jquery-1.9.0.min.js" async></script -->
+                <ul class="social-media-links">
+                    <li>
+                        <a href="http://www.twitter.com/minosiants">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/minosiants">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://www.linkedin.com/in/kaspar">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/kaspar.minosiants">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+        <section id="main" role="main" class="projects"> 
+           {{ content }}
+       </section>
+       <footer>
+       </footer>
+   </section>
 </body>
 
 </html>
