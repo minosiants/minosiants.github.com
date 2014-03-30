@@ -6,9 +6,13 @@
     -moz-background-size: cover;
     -o-background-size: cover;
      background-size: cover;    
+   z-index: 20;
+   -webkit-transform: translateZ(20);
+   
   }
   .avatare img {
      width: 245px;  
+     -webkit-transform: translateZ(0);
    }
    header{
     padding-top: 1rem;
