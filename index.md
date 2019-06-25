@@ -4,7 +4,7 @@ title: Kaspar Minosiants
 ---
 ## Personal projects
 
-###[fris.bi](https://fris.bi "fris.bi")  / 2015 /
+###[fris.bi](https://frisbiapp.tumblr.com/"fris.bi")  / 2015 /
 
 >Frisbi is a video chat service designed to be simple and fun without a lot of frills.
 >This project was made up and implemented by me. It's based on Scala and MongoDB.
