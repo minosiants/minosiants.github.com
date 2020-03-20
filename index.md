@@ -8,17 +8,20 @@ title: Kaspar Minosiants
 
 >`Pencil` is a simple smtp client.
 >The main goal of `Pencil` is to be able to send emails in the simplest way.
+>
 >Scala, cats, cats-effect, fs2, scodec
 
 ### [youtube-extra](https://github.com/minosiants/youtube-extra "youtube-extra")  / 2020 /
 
 >`youtube-extra` some extra useful functionality using youtube data api.
+>
 >Scala, http4s, cats, cats-effect
 
 ### [fris.bi](https://frisbiapp.tumblr.com "fris.bi")  / 2015 /
 
 >`Frisbi` is a video chat service designed to be simple and fun without a lot of frills.
 >This project was made up and implemented by me. It's based on Scala and MongoDB.
+>
 >Scala, Akka, EventSourcing, CQRS, WebRTC, Node, Koa , Html5, javascript, CSS
 
 ### [quotiny.tv](http://quotiny.tv "Quotiny")  / 2011 /
